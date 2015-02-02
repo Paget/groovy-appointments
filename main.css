@@ -1,0 +1,23 @@
+.spa-content {
+  background: green;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.add-apt {
+  background: red;
+  width: 700px;
+}
+
+.panel-1 {
+
+}
+
+.panel-1 button {
+  float: right;
+
+}
