@@ -2,48 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Happy Appointments</title>
+    <title>Appointments</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
     <div class="spa-content"></div>
 
 
-    <script id="page1" type="text/html">
+    <script id="list-page" type="text/html">
 
       <div class="panel-1">
 
-        <header class="add-apt">
-
-          <h1>Scheduled Appointments</h1>
-
-            <button class="add-button">ADD</button>
+        <header>
+          <h1>Your Appointment Calendar</h1>
+          <form>
+            <button class="add-appt">+ Add</button>
+          </form>
 
         </header>
-
-        <form>
-
-          <input type = "text">
-
-          <button>Save</button>
-
-        </form>
 
       </div>
 
     </script>
 
-    <script id="page2" type="text/html">
+    <script id="new-appt" type="text/html">
 
-    <div class="panel-2"</div>
+    <div class="panel-2">
 
       <form>
-
         <input type = "text">
-
-        <button>Go Back!</button>
-
+        <button class="show-list-page">Go Back!</button>
       </form>
 
     </div>

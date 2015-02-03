@@ -1,23 +1,31 @@
 .spa-content {
-  background: green;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-}
-
-
-.add-apt {
-  background: red;
-  width: 700px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  color: white;
 }
 
 .panel-1 {
-
+  background: #48611b;
+  width: 375px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
 }
 
-.panel-1 button {
-  float: right;
-
+.add-appt {
+  width: 100px;
+  display: inline block;
+  margin: 20px;
+  padding: 10px;
+  background: #b46204;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 15px;
 }
