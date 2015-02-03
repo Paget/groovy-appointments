@@ -4,13 +4,15 @@
   right: 0;
   left: 0;
   bottom: 0;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 25px;
-  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 30px;
+  color: black;
 }
 
-.panel-1 {
-  background: #48611b;
+/*list-page header*/
+
+.list {
+  background: orange;
   width: 375px;
   height: 100px;
   text-align: center;
@@ -18,14 +20,97 @@
   padding: 10px;
 }
 
+/*list-page body*/
+
+.panel-1 {
+  background: #48611b;
+  height: 750px;
+}
+
+/*list-page button*/
+
 .add-appt {
   width: 100px;
   display: inline block;
   margin: 20px;
   padding: 10px;
-  background: #b46204;
-  color: white;
+  background: yellow;
+  color: black;
   text-transform: uppercase;
-  font-family: 'Abril Fatface', cursive;
+  font-family: Arial;
   font-size: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*list-page search input*/
+
+.search {
+  padding: 1em;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  /*width: 300px;*/
+}
+
+/*new-appt page header*/
+
+.new-appt {
+  background: pink;
+  width: 375px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+/*new-appt body*/
+
+.panel-2 {
+  background: purple;
+  height: 750px;
+}
+
+/*new-appt button*/
+
+.show-list-page {
+  width: 100px;
+  display: inline block;
+  margin: 20px;
+  padding: 10px;
+  background: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*appt-info forms */
+
+.appt-info {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.appt-info input {
+  display: block;
+  padding: 1em;
+  margin: auto;
+  width: 300px;
+}
+
+.save-it {
+  width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px;
+  background: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
 }

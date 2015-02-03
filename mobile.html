@@ -6,22 +6,22 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
     <div class="spa-content"></div>
 
-
     <script id="list-page" type="text/html">
 
       <div class="panel-1">
 
-        <header>
-          <h1>Your Appointment Calendar</h1>
-          <form>
+        <header class="list">
+          <h1>Your Groovy Appointments</h1>
+
+            <input class="search" type="text" placeholder="Search"/>
+
             <button class="add-appt">+ Add</button>
-          </form>
 
         </header>
 
@@ -32,11 +32,22 @@
     <script id="new-appt" type="text/html">
 
     <div class="panel-2">
+      <header class="new-appt">
+        <h1>Add the 411</h1>
 
-      <form>
-        <input type = "text">
         <button class="show-list-page">Go Back!</button>
-      </form>
+      </header>
+
+      <div class="appt-info">
+        <input type="text" placeholder="Name"/>
+        <input type="text" placeholder="Street"/>
+        <input type="text" placeholder="City, State"/>
+        <input type="text" placeholder="Date"/>
+        <input type="text" placeholder="Time"/>
+        <button class="save-it">Zap It to Memory!</button>
+      </div>
+
+      
 
     </div>
 
