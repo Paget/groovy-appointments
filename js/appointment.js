@@ -1,13 +1,16 @@
 
-app.Appointment = function Appointment(spec) {
+app.Appointment = function (spec) {
   var self = {
     name: spec.name,
-    street: spec.street,
-    cityState: spec.cityState,
+    location: spec.location,
     date: spec.date,
-    time: spec.time
-    }
-  };
+    time: spec.time,
 
-  return self;
-}
+    equal: function (otherAppt) {
+      return self.date === otherAppt.date;
+    }
+
+    }
+    return self;
+
+  };
