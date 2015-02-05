@@ -1,3 +1,7 @@
+add the below to edit view:
+
+
+
 //
 // (function(){
 //

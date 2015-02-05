@@ -12,33 +12,3 @@ app.showListView = function () {
 
   $('.add-appt').click(app.showEditView);
 return false;
-    // $('.spa-content').on('click', '.add-appt', function () {
-    //
-    //
-    //   app.showEditView();
-    //
-    //   // return false;
-    // });
-};
-
-
-
-
-
-
-// $(function () {
-//   var listPage = $('#list-page').html();
-//   var newApptPage = $('#new-appt').html();
-//
-//   $('.spa-content').html(listPage);
-//
-//   $('.spa-content').on('click', '.add-appt', function () {
-//     $('.spa-content').html(newApptPage);
-//     return false;
-//   });
-//
-//   $('.spa-content').on('click', '.show-list-page', function () {
-//     $('.spa-content').html(listPage);
-//     return false;
-//   });
-// });
