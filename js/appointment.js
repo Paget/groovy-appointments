@@ -5,12 +5,10 @@ app.Appointment = function (spec) {
     location: spec.location,
     date: spec.date,
     time: spec.time,
+    id: spec.id
 
-    equal: function (otherAppt) {
-      return self.date === otherAppt.date;
-    }
 
     }
     return self;
 
-  };
+};
