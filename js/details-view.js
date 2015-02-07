@@ -15,10 +15,5 @@ app.showDetailView = function(appt) {
   $('.app-item').click(app.showDetailView);
 
 return false;
-}
-
-
-
-
 
 };
