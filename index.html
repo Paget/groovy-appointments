@@ -6,42 +6,38 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin|Lobster+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
   <div class="spa-content"></div>
 
   <script id="list-page" type="text/html">
-
-    <div class="panel-1">
-
       <header class="list">
         <h1>Your Groovy Appointments</h1>
-
-        <input class="search" type="text" placeholder="Search"/>
-          <ul>
-            <% m.appts.forEach(function(appt) { %>
-
-              <li>
-                <%- appt.name %>
-              </li>
-              <li>
-                <%- appt.location %>
-              </li>
-              <li>
-                <%- appt.date %>
-              </li>
-              <li>
-                <%- appt.time %>
-              </li>
-
-              <% }) %>
-          </ul>
-
-        <button class="add-appt">+ Add</button>
-
+          <button class="add-appt">+</button>
+        <!-- <input class="search" type="text" placeholder="Search"/> -->
       </header>
+    <div class="panel-1">
+
+            <% m.appts.forEach(function(appt) { %>
+              <div class="app-item">
+                <ul>
+                  <li>
+                    <%- appt.name %>
+                  </li>
+                  <li>
+                    <%- appt.location %>
+                  </li>
+                  <li>
+                    <%- appt.date %>
+                  </li>
+                  <li>
+                    <%- appt.time %>
+                  </li>
+                </ul>
+              </div>
+            <% }) %>
 
     </div>
 
@@ -69,6 +65,17 @@
       </form>
     </div>
   </script>
+
+
+  <script id="detail-view" type="text/html">
+
+    <div class="panel-3">
+      <header class="appt-details">
+        <h1>Here's the deets you cool cat!</h1>
+    </div>
+  </script>
+
+
 
   <script src= "bower_components/jquery/dist/jquery.min.js"></script>
   <script src= "bower_components/lodash/lodash.min.js"></script>

@@ -9,6 +9,6 @@ app.showListView = function () {
   }));
 
 
-
   $('.add-appt').click(app.showEditView);
 return false;
+}
