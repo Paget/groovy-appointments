@@ -16,25 +16,17 @@
       <header class="list">
         <h1>Your Groovy Appointments</h1>
           <button class="add-appt">+</button>
-        <!-- <input class="search" type="text" placeholder="Search"/> -->
       </header>
+
     <div class="panel-1">
 
             <% m.appts.forEach(function(appt) { %>
-              <div class="app-item">
+              <div class="app-item" data-id="<%- appt.id %>">
                 <ul>
-                  <li>
-                    <%- appt.name %>
-                  </li>
-                  <li>
-                    <%- appt.location %>
-                  </li>
-                  <li>
-                    <%- appt.date %>
-                  </li>
-                  <li>
-                    <%- appt.time %>
-                  </li>
+                  <li><%- appt.name %></li>
+                  <li><%- appt.location %></li>
+                  <li><%- appt.date %></li>
+                  <li><%- appt.time %></li>
                 </ul>
               </div>
             <% }) %>
@@ -46,6 +38,7 @@
   <script id="new-appt" type="text/html">
 
     <div class="panel-2">
+
       <header class="new-appt">
         <h1>Add the 411</h1>
 
@@ -59,6 +52,7 @@
           <input type="text" name="location" placeholder="Location"/>
           <input type="text" name="date" placeholder="Date"/>
           <input type="text" name="time" placeholder="Time"/>
+          <textarea rows="6" cols="51" name="notes" placeholder="Notes"></textarea>
 
           <button class="save-it" type="submit">Zap It to Memory!</button>
         </div>
@@ -70,8 +64,19 @@
   <script id="detail-view" type="text/html">
 
     <div class="panel-3">
+
       <header class="appt-details">
         <h1>Here's the deets you cool cat!</h1>
+      </header>
+        <div class="deet-view">
+
+          <li><%- m.name %></li>
+          <li><%- m.location %></li>
+          <li><%- m.date %></li>
+          <li><%- m.time %></li>
+          <li><%- m.notes %></li>
+
+        </div>
     </div>
   </script>
 

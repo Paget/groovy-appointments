@@ -21,7 +21,6 @@
   margin-bottom: 20px;
 }
 
-
 /*list-page body*/
 
 .panel-1 {
@@ -48,7 +47,6 @@
   border: none;
 }
 
-
 .panel-1 li {
   color: black;
   font-size: 16px;
@@ -67,21 +65,6 @@
   margin-bottom: 10px;
   background: white;
 }
-
-/*.panel-1 ul {
-  padding: 5px;
-  border: 1px dashed black;
-  margin: auto;
-}*/
-/*list-page search input*/
-
-/*.search {
-  padding: 1em;
-  margin: auto;
-  border-radius: 5px;
-  border: none;
-  /*width: 300px;*/
-/*}/*/
 
 /*new-appt page header*/
 
@@ -103,7 +86,6 @@
 
 /*new-appt button*/
 
-
 .show-list-page {
   float: right;
   position: relative;
@@ -117,7 +99,6 @@
   font-size: 15px;
   border-radius: 5px;
   border: none;
-
 }
 
 /*appt-info forms */

@@ -1,12 +1,12 @@
-
+//appointment.js
 app.Appointment = function (spec) {
   var self = {
+    id: spec.id,
     name: spec.name,
     location: spec.location,
     date: spec.date,
     time: spec.time,
-    id: spec.id
-
+    notes: spec.notes
 
     }
     return self;
