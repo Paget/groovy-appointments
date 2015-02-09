@@ -29,7 +29,7 @@ app.AppointmentStore = function () {
 
     removeById: function (apptId) {
       appointments = appointments.filter(function (item) {
-        return item.id == apptId;
+        return item.id !== apptId;
       });
     },
 

@@ -25,6 +25,7 @@
 
             <% m.appts.forEach(function(appt) { %>
               <div class="app-item" data-id="<%- appt.id %>">
+                <button class="delete">X</button>
                 <ul>
                   <li><%- appt.name %></li>
                   <li><%- appt.location %></li>
