@@ -5,9 +5,23 @@ app.showDetailView = function(apptId) {
 
   var template = _.template(templateStr, { variable: 'm' });
 
-  $('.spa-content').html(template(app.appointments.findById(apptId)));
+  var selectedAppt = app.appointments.findById(apptId);
 
-  $('.return-to-list').click(app.showListView);
+  $('.spa-content').html(template(selectedAppt));
+
+  // $('.return-to-list').click(app.showListView);
+console.log("hello", selectedAppt);
+  $.getJSON('http://api.openweathermap.org/data/2.5/weather?q='
+      + selectedAppt.location + '&units=imperial')
+
+    .done(function(data){
+      console.log(data);
+      $('.weather h3').html((data.main.temp + "&deg; F"));
+    })
+    .fail(function(request, status, error) {
+        console.log('This failed because' + error);
+      });
+
 
   return false;
 
