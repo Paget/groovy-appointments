@@ -3,7 +3,7 @@ app.showListView = function () {
   var templateStr = $('#list-page').html();
 
   var template = _.template(templateStr, { variable: 'm' });
-
+  console.log("here", app.appointments.query());
   $('.spa-content').html(template({
     appts: app.appointments.query()
   }));

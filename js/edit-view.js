@@ -3,6 +3,11 @@
 app.showEditView = function () {
   $('.spa-content').html($('#new-appt').html());
 
+  $('.datepicker').pickadate();
+  $('.timepicker').pickatime();
+
+  $('.show-list-page').click(app.showListView);
+
   $('.appt-form').submit(function () {
     var appt = app.Appointment({
       id: Date.now(),

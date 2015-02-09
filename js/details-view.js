@@ -7,6 +7,8 @@ app.showDetailView = function(apptId) {
 
   $('.spa-content').html(template(app.appointments.findById(apptId)));
 
+  $('.return-to-list').click(app.showListView);
+
   return false;
 
 };
