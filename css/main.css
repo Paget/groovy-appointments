@@ -65,6 +65,11 @@
   margin: auto;
   margin-bottom: 10px;
   background: white;
+  font-size: 25px;
+}
+
+.app-item li {
+  font-size: 22px;
 }
 
 /*new-appt page header*/
@@ -75,6 +80,8 @@
   height: 75px;
   text-align: center;
   margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*new-appt body*/
@@ -147,4 +154,54 @@ textarea, .datepicker, .timepicker {
   border-radius: 5px;
   border: none;
   outline-color: #ae2cc2;
+}
+
+.panel-3 {
+  background: orange;
+  height: 750px;
+  width: 375px;
+}
+
+.appt-details {
+  font-size: 40px;
+  text-align: center;
+  background: yellow;
+  width: 375px;
+  height: 75px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.deet-view {
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  background: white;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  border: 5px double red;
+}
+
+.deet-view li {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.weather {
+  padding: 10px;
+  width: 300px;
+  height: 100px;
+  background: white;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  border: 5px double red;
+}
+
+.weather h3 {
+  padding-top: 25px;
+  font-size: 40px;
 }
