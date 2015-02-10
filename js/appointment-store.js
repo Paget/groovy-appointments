@@ -14,12 +14,12 @@ app.AppointmentStore = function () {
     },
 
     findById: function (apptId) {
-       appointments = appointments.filter(function (item) {
+      var matchingAppts = appointments.filter(function (item) {
         return item.id == apptId;
       });
 
-      if(appointments.length) {
-        return appointments[0];
+      if(matchingAppts.length) {
+        return matchingAppts[0];
       }
     },
 

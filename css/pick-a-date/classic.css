@@ -14,7 +14,7 @@
   cursor: default
 }
 .picker__input.picker__input--active {
-  border-color: #ae2cc2;
+  border-color: #d70c20;
 }
 .picker__holder {
   width: 100%;

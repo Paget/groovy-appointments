@@ -5,7 +5,6 @@
   left: 0;
   bottom: 0;
   font-family: 'Lobster Two', cursive;
-  font-size: 30px;
   color: black;
   background: #48611b;
   overflow: auto;
@@ -13,40 +12,43 @@
 
 /*list-page header*/
 
+
 .list {
   background: orange;
-  width: 375px;
-  height: 75px;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 /*list-page body*/
 
 .panel-1 {
-  /*background: #48611b;*/
-  height: 750px;
-  width: 375px;
-  /*opacity: 0.7;*/
+  background: #48611b;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
 }
 
 /*list-page button*/
 
 .add-appt {
-  float: right;
-  position: relative;
-  top: -40px;
-  margin: 5px;
-  padding: 0  5px 0 5px;
-  background: yellow;
-  color: black;
-  text-transform: uppercase;
-  font-family: 'Cabin', sans-serif;
-  font-size: 30px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
+   position: relative;
+   margin-right: 15px;
+   float: right;
+   bottom: 40px;
+   background: yellow;
+   color: black;
+   text-transform: uppercase;
+   font-family: 'Cabin', sans-serif;
+   font-size: 30px;
+   border-radius: 2.5px;
+   border: none;
+   outline: none;
 }
 
 .panel-1 li {
@@ -54,19 +56,20 @@
   font-size: 16px;
   margin: auto;
   text-align: center;
-  padding: 5px;
+  padding: 3px;
 }
 
 /*indiviual appt items on list page*/
 
 .app-item {
   width: 225px;
-  border: 3px double red;
+  border: 2px solid #d70c20;
   padding: 5px;
   margin: auto;
   margin-bottom: 10px;
   background: white;
   font-size: 25px;
+
 }
 
 .app-item li {
@@ -76,37 +79,40 @@
 /*new-appt page header*/
 
 .new-appt {
-  background: pink;
-  width: 375px;
-  height: 75px;
+  background: orange;
   text-align: center;
   margin: auto;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 /*new-appt body*/
 
 .panel-2 {
-  background: purple;
-  height: 750px;
-  width: 375px;
+  background: #48611b;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+}
+
+.panel-2 h1 {
+  font-family: 'Lobster Two', serif;
 }
 
 /*new-appt button*/
 
 .show-list-page {
-  float: right;
   position: relative;
-  top: 10px;
-  margin: 5px;
-  padding: 0  5px 0 5px;
+  margin-left: 20px;
+  float: left;
+  bottom: 40px;
   background: yellow;
   color: black;
   text-transform: uppercase;
   font-family: 'Cabin', sans-serif;
-  font-size: 15px;
-  border-radius: 5px;
+  font-size: 30px;
+  border-radius: 2.5px;
   border: none;
   outline: none;
 }
@@ -122,9 +128,9 @@
   display: block;
   padding: 1em;
   margin: auto;
-  width: 300px;
+  width: 200px;
   font-family: 'Cabin', sans-serif;
-  outline-color: #ae2cc2;
+  outline-color: #d70c20;
   font-size: 18px;
 }
 
@@ -132,20 +138,22 @@ textarea {
   display: block;
   padding: 1em;
   margin: auto;
-  width: 303px;
+  width: 203px;
   font-family: 'Cabin', sans-serif;
-  outline-color: #ae2cc2;
+  outline-color: #d70c20;
   font-size: 18px;
 }
 
 textarea, .datepicker, .timepicker {
-  outline-color: #ae2cc2;
+  outline-color: #d70c20;
 }
 
-.save-it, .return-to-list {
-  width: 300px;
+.save-it {
+  width: 175px;
+  height; 125px;
   margin: auto;
   margin-top: 15px;
+  margin-bottom: 150px;
   padding: 5px;
   background: yellow;
   color: black;
@@ -154,55 +162,75 @@ textarea, .datepicker, .timepicker {
   font-size: 15px;
   border-radius: 5px;
   border: none;
-  outline-color: #ae2cc2;
+  outline-color: #d70c20;
 }
 
 .panel-3 {
-  background: orange;
-  height: 750px;
-  width: 375px;
+  height: 1500px;
+  background: #48611b;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
 }
 
 .appt-details {
-  font-size: 40px;
+  font-family: 'Lobster Two', serif;
+  font-size: 30px;
   text-align: center;
-  background: yellow;
-  width: 375px;
-  height: 75px;
+  background: orange;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
 .deet-view {
-  padding: 10px;
-  width: 300px;
+  padding: 5px;
+  width: 200px;
   height: auto;
   background: white;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
-  border: 5px double red;
+  border: 2px solid #d70c20;
+  font-size: 20px;
 }
 
 .deet-view li {
   list-style-type: none;
   text-align: center;
-  padding-top: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .weather {
-  padding: 10px;
-  width: 300px;
+  padding: 5px;
+  width: 200px;
   height: 100px;
   background: white;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
-  border: 5px double red;
+  border: 2px solid #d70c20;
 }
 
 .weather h3 {
   padding-top: 25px;
   font-size: 40px;
+  font-family: 'Lobster Two', serif;
 }
+
+.delete {
+  position: absolute;
+}
+
+.return-to-list {
+   position: relative;
+   margin-left: 15px;
+   float: left;
+   bottom: 40px;
+   background: yellow;
+   color: black;
+   text-transform: uppercase;
+   font-family: 'Cabin', sans-serif;
+   font-size: 30px;
+   border-radius: 2.5px;
+   border: none;
+   outline: none;

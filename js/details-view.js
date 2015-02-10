@@ -8,8 +8,8 @@ app.showDetailView = function(apptId) {
   var selectedAppt = app.appointments.findById(apptId);
 
   $('.spa-content').html(template(selectedAppt));
-
-  // $('.return-to-list').click(app.showListView);
+//
+  $('.return-to-list').click(app.showListView);
 console.log("hello", selectedAppt);
   $.getJSON('http://api.openweathermap.org/data/2.5/weather?q='
       + selectedAppt.location + '&units=imperial')

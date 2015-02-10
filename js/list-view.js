@@ -1,6 +1,8 @@
 //list-view.js
 app.showListView = function () {
 
+  // app.appointments.load();
+
   var templateStr = $('#list-page').html();
 
   var template = _.template(templateStr, { variable: 'm' });
